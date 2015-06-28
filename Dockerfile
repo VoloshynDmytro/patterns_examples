@@ -5,10 +5,9 @@ MAINTAINER Voloshyn Dmytro <voloshyn@gmail.com>
 # Local directory with project source
 ENV DOCK_LOCALAPP_SRC=patterns_examples_app
 # Directory in container for all project files
-ENV DOCHOME /root/projects
+ENV DOCHOME /root
 # Directory in container for project source files
-ENV DOC_APP_FOLDER=/root/projects/patterns_examples_app
-
+ENV DOC_APP_FOLDER=/root/patterns_examples
 # Create application subdirectories
 WORKDIR $DOCHOME
 # Copy application source code to SRCDIR
