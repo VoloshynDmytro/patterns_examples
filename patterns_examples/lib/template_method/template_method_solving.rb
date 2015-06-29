@@ -1,8 +1,8 @@
-#abstract class
+# abstract class
 class Team
   attr_reader :size, :main_size, :leagues
 
-  #template method
+  # template method
   def initialize
     @size = size
     @main_size = main_size
@@ -13,7 +13,7 @@ class Team
     @size - @main_size
   end
 
-  #hooks
+  # hooks
   def size
     15
   end
@@ -31,16 +31,17 @@ class Team
   end
 
   def founded_at
-    raise "You must define team founded date"
+    fail 'You must define team founded date'
   end
 
   def founder
-    raise "You must define team founder"
+    fail 'You must define team founder'
   end
 end
 
+# inherited subclass
 class HockeyTeam < Team
-  #hooks
+  # hooks
   def size
     20
   end
@@ -54,7 +55,7 @@ class HockeyTeam < Team
   end
 
   def founded_at
-    Date.new(1986,2,10)
+    Date.new(1986, 2, 10)
   end
 
   def founder
@@ -62,8 +63,9 @@ class HockeyTeam < Team
   end
 end
 
+# inherited subclass
 class BasketballTeam < Team
-  #hooks
+  # hooks
   def size
     12
   end
@@ -77,7 +79,7 @@ class BasketballTeam < Team
   end
 
   def founded_at
-    Date.new(1967,5,8)
+    Date.new(1967, 5, 8)
   end
 
   def founder

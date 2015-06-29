@@ -1,4 +1,4 @@
-#Template method pattern
+# Template method pattern
 require 'spec_helper'
 
 require_relative '../../lib/template_method/template_method_solving.rb'

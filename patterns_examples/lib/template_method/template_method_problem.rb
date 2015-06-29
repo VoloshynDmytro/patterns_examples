@@ -1,3 +1,5 @@
+# Base FakeTeam class with ugly initialize method
+# which should be solved by template method
 class FakeTeam
   attr_reader :size, :main_size, :leagues
 
