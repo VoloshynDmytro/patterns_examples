@@ -17,7 +17,11 @@ describe "Problem to solve with strategy pattern" do
 
     describe "printing player information" do
       it "prints info" do
-        expect(player.print_info).to eq("Player's position is forward and he scored 3 goals.")
+        expect(player.print_base_info).to eq("Player's position is forward and he scored 3 goals.")
+      end
+
+      it "prints abilities" do
+        expect(player.print_abilities).to eq("high_speed, scoring_goals")
       end
     end
 
